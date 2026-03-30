@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="autor" content="Alan Gonzalez M">
+    <title>Ejercicio CSS # 3</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial;
+        }
+
+        body {
+            background: #f2f2f2;
+        }
+
+        .menu {
+            display: flex;
+            padding: 15px;
+        }
+
+        .menu a {
+            color: blue;
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 20px;
+        }
+
+        .contenedor {
+            display: flex;
+            padding: 20px;
+        }
+
+        .izquierda {
+            width: 40%;
+            margin-right: 20px;
+        }
+
+        .imagen-grande img {
+            width: 100%;
+            height: 250px;
+            border: 2px solid black;
+        }
+
+        .texto {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        .centro {
+            width: 40%;
+            margin-right: 20px;
+        }
+
+        .cajas-arriba {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .cajas-arriba img {
+            width: 48%;
+            height: 80px;
+            margin-right: 4%;
+        }
+
+        .imagen-media img {
+            width: 100%;
+            height: 200px;
+            margin-bottom: 10px;
+        }
+
+        .cajas-abajo {
+            display: flex;
+            margin-top: 20px;
+        }
+
+        .cajas-abajo img {
+            width: 48%;
+            height: 80px;
+            margin-right: 4%;
+        }
+
+        .derecha {
+            width: 20%;
+        }
+
+        .derecha img {
+            width: 100%;
+            height: 80px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="menu">
+        <a href="#">Opción 1</a>
+        <a href="#">Opción 2</a>
+        <a href="#">Opción 3</a>
+        <a href="#">Opción 4</a>
+        <a href="#">Opción 5</a>
+    </nav>
+
+    <div class="contenedor">
+
+        <div class="izquierda">
+            <div class="imagen-grande">
+                <img src="https://picsum.photos/500/300?1">
+            </div>
+            <div class="texto">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, molestias.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+
+        <div class="centro">
+            <div class="cajas-arriba">
+                <img src="https://picsum.photos/200/80?2">
+                <img src="https://picsum.photos/200/80?3">
+            </div>
+
+            <div class="imagen-media">
+                <img src="https://picsum.photos/400/200?4">
+            </div>
+
+            <div class="texto">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+
+            <div class="cajas-abajo">
+                <img src="https://picsum.photos/200/80?5">
+                <img src="https://picsum.photos/200/80?6">
+            </div>
+        </div>
+
+        <div class="derecha">
+            <img src="https://picsum.photos/150/80?7">
+            <img src="https://picsum.photos/150/80?8">
+            <img src="https://picsum.photos/150/80?9">
+            <img src="https://picsum.photos/150/80?10">
+            <img src="https://picsum.photos/150/80?11">
+        </div>
+
+    </div>
+
+
+    <br><br><br>
+    <a href="../index.html">Volver a la Pagina Principal</a>
+</body>
+
+</html>

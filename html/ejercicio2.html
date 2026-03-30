@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="autor" content="Alan Gonzalez M">
+    <title>Ejemplo CSS #2</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial;
+        }
+
+        .encabezado {
+            background: #2c3e50;
+            color: white;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .menu a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+        }
+
+        .slider img {
+            width: 100%;
+            height: 300px;
+        }
+
+        .texto-slider {
+            background: rgba(255, 0, 0, 0.6);
+            color: white;
+            padding: 10px;
+        }
+
+        .sobre {
+            margin: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .sobre-izq {
+            width: 30%;
+            background: #5dade2;
+            color: white;
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .sobre-der {
+            width: 65%;
+            padding: 20px;
+        }
+
+        .sobre-der img {
+            display: block;
+            margin-bottom: 10px;
+            border-radius: 50%;
+        }
+
+        .equipo {
+            margin: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .miembros {
+            width: 65%;
+            text-align: center;
+        }
+
+        .miembros div {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        .miembros img {
+            border-radius: 50%;
+        }
+
+        .titulo-equipo {
+            width: 30%;
+            background: #5dade2;
+            color: white;
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .servicios {
+            margin: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .titulo-servicios {
+            width: 30%;
+            background: orange;
+            color: white;
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .contenido-servicios {
+            width: 65%;
+            background: #f39c12;
+            padding: 20px;
+            color: white;
+        }
+
+
+        .logo {
+            margin-right: 700px;
+            font-size: 30px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .iconos {
+
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .lapizfinal {
+
+            height: 80px;
+            width: 80px;
+            background-color: #f39c12;
+
+        }
+
+        .imgfinal {
+
+            height: 80px;
+            width: 80px;
+            background-color: #090909;
+
+        }
+
+        .imgfinal2 {
+
+            height: 80px;
+            width: 80px;
+            background-color: #090909;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="encabezado">
+        <div class="logo">KARMA</div>
+        <div class="menu">
+            <a href="#">HOME</a>
+            <a href="#">ABOUT US</a>
+            <a href="#">SERVICES</a>
+            <a href="#">PORTFOLIO</a>
+            <a href="#">BLOG</a>
+            <a href="#">CONTACT</a>
+        </div>
+    </header>
+
+    <section class="slider">
+        <img src="https://picsum.photos/1200/400">
+        <div class="texto-slider">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas ipsum similique placeat? Soluta ut, odio
+            molestiae nisi exercitationem maxime maiores aut laboriosam eius quo totam harum, rerum, dolore nobis in!.
+        </div>
+    </section>
+
+    <section class="sobre">
+        <div class="sobre-izq">
+            <h2>ABOUT US</h2>
+        </div>
+        <div class="sobre-der">
+            <img src="https://picsum.photos/100">
+            <h4>John Doe</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure minus odio facere optio libero. Expedita
+                quia perspiciatis libero accusantium dolores odio tenetur earum dignissimos, hic, veniam ad natus.
+                Perferendis, atque.</p>
+        </div>
+    </section>
+
+    <section class="equipo">
+        <div class="miembros">
+            <div>
+                <img src="https://picsum.photos/100">
+                <p>Nancy<br><small>Manager</small></p>
+            </div>
+            <div>
+                <img src="https://picsum.photos/101">
+                <p>Mary<br><small>Designer</small></p>
+            </div>
+            <div>
+                <img src="https://picsum.photos/102">
+                <p>Anna<br><small>Artist</small></p>
+            </div>
+        </div>
+        <div class="titulo-equipo">
+            <h2>OUR TEAM</h2>
+        </div>
+    </section>
+
+    <section class="servicios">
+        <div class="titulo-servicios">
+            <h2>SERVICES</h2>
+
+
+        </div>
+
+
+        <div class="iconos">
+            <div> <img class="lapizfinal" src="https://cdn-icons-png.flaticon.com/512/598/598234.png" alt=""></div>
+            <div> <img class="imgfinal" src="https://img.icons8.com/m_rounded/512/FFFFFF/settings.png" alt=""></div>
+            <div> <img class="imgfinal2"
+                    src="https://www.nicepng.com/png/full/52-527751_pics-for-chart-icon-black-and-white-png.png" alt="">
+            </div>
+        </div>
+        <div class="contenido-servicios">
+            <h4>Web Design</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis veniam vel dicta deleniti, ratione autem
+                consequatur, nesciunt mollitia maxime repellat ipsum nam, maiores impedit animi. Recusandae fugit alias
+                omnis perspiciatis?</p>
+        </div>
+    </section>
+    <br><br><br>
+    <a href="../index.html">Volver a la Pagina Principal</a>
+</body>
+
+</html>

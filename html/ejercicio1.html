@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="autor" content="Alan Gonzalez M">
+    <title>Ejemplo CSS#1</title>
+
+    <style>
+        body {
+            margin: 0;
+            background: #ddd;
+            font-family: Arial;
+        }
+
+        .marco {
+            width: 900px;
+            margin: 30px auto;
+            border: 10px solid #333;
+            background: #ccc;
+            padding: 10px;
+        }
+
+        header {
+            background: #d4a000;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav {
+            background: #ccc;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            display: inline-block;
+            background: #eee;
+            padding: 10px 20px;
+            margin: 5px;
+            text-decoration: none;
+            color: #d4a000;
+            border: 1px solid #999;
+            font-weight: bold;
+        }
+
+        .contenido {
+            background: #eee;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .caja {
+            width: 22%;
+            background: #ddd;
+            padding: 10px;
+            border: 5px solid #bbb;
+        }
+
+        .grande {
+            width: 50%;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        button {
+            width: 100%;
+            padding: 5px;
+            margin-top: 10px;
+        }
+
+        footer {
+            background: #d4a000;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="marco">
+
+        <header>
+            Power Grid Homepage
+        </header>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Blog</a>
+            <a href="#">Careers</a>
+            <a href="#">Contact Us</a>
+        </nav>
+
+        <div class="contenido">
+
+            <div class="caja">
+                <img src="https://picsum.photos/200/120?1">
+                <p>This is some awesome content that is on the page.</p>
+                <button>Go Somewhere</button>
+            </div>
+
+            <div class="caja">
+                <img src="https://picsum.photos/200/120?2">
+                <p>This is more content than the previous box, but less than the next.</p>
+                <button>Click Me</button>
+            </div>
+
+            <div class="caja grande">
+                <img src="https://picsum.photos/400/200?3">
+                <p>
+                    We have lots of content here to show that content can grow,
+                    and everything stays aligned.
+                </p>
+                <button>Do Something</button>
+            </div>
+
+        </div>
+
+        <footer>
+            Copyright © 2016
+        </footer>
+
+    </div>
+    <br><br><br>
+    <a href="../index.html">Volver a la Pagina Principal</a>
+</body>
+
+</html>
